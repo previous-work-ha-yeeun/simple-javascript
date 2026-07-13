@@ -1,1 +1,2 @@
-# simple-javascript
+# javascript
+simple and basic javascript work
