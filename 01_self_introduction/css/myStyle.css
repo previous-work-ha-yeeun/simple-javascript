@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(230, 239, 230);
+    margin: 0;
+}
+
+.introduction_text{
+    font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
+}
+
+.second h3{
+    font-family: 'Shadows Into Light', cursive ;
+    font-size: xx-large;
+    color: cadetblue;
+}
