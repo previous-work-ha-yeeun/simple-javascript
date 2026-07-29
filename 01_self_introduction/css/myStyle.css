@@ -3,6 +3,22 @@ body{
     margin: 0;
 }
 
+article{
+    width: 85%;
+    background-color: white;
+    position: relative;
+    left: 15%; /* shift 15% from its original position */
+}
+
+.nav{
+    position: fixed; /* fixed & absolute : floating  */   
+    width: 15%;
+}
+
+.first{
+    height: 900px;
+}
+
 .introduction_text{
     font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
 }
