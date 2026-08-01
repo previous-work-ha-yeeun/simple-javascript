@@ -10,12 +10,27 @@ article{
     left: 15%; /* shift 15% from its original position */
 }
 
-.nav{
+ul.nav{
     position: fixed; /* fixed & absolute : floating  */   
     width: 15%;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
 }
 
-.first{
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+}
+
+.nav a:hover{
+    background-color: green;
+    color: white;   
+}
+
+article .first{
     height: 850px;
     background: url(../images/Initial_canada.jpg) fixed;
     background-size: cover;
@@ -25,7 +40,7 @@ article{
     font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
 }
 
-.second h3{
+article .second h3{
     font-family: 'Shadows Into Light', cursive ;
     font-size: xx-large;
     color: cadetblue;
