@@ -53,8 +53,34 @@ article .first{
     margin-top: 50px;
 }
 
+article .second{
+    padding-left: 20px;
+    padding-bottom: 200px;
+}
+
 article .second h3{
     font-family: 'Shadows Into Light', cursive ;
     font-size: xx-large;
     color: cadetblue;
+}
+
+h2, h3{
+    text-transform: capitalize;
+}
+
+::marker{
+    color: seagreen;
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* When user drags and selects text (::selection) */
+::selection{
+    color: white;
+    background-color: darkcyan;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
 }
