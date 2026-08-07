@@ -21,14 +21,14 @@
     <!-- Left section -->
     <section>
         <ul class="nav">
-            <li><a href="">Top ▲</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Bottom ▼</a></li>
+            <li><a href="#top">Top ▲</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#bottom">Bottom ▼</a></li>
         </ul>
     </section>
 
     <!-- Main article -->
-    <article>
+    <article id="top">
         <div class="first">
             <div class="first_introduction">
                 <h2 id="javascript_message"></h2> <!-- from <script> -->
@@ -38,7 +38,7 @@
         </div>
 
         <div class="second">
-            <h3>Interesting things about me</h3>
+            <h3><span id="aboutMe">Interesting</span> things about me</h3>
             <ul>
                 <li>A student who speaks korean fluently</li>
                 <li>
@@ -81,7 +81,7 @@
 
     <!-- footer -->
     <footer>
-        This page was originally created in September 2023. 
+        <span id="bottom">This</span> page was originally created in September 2023. 
         <br>
         Thank you for reading!
     </footer>
