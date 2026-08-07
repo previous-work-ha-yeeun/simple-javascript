@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YeEun Ha</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fonts: Indie Flower, Rubik, Shadows Into Light -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/myStyle.css">
 </head>
 <body>
-    
+     <!-- Left section -->
+    <section>
+        <ul class="nav">
+            <li><a href="#top">Top ▲</a></li>
+            <li><a href="#aboutMe">The Result</a></li>
+            <li><a href="#bottom">Bottom ▼</a></li>
+        </ul>
+    </section>
+
+    <!-- Main article -->
+    <article id="top">
+        <div class="first">
+            <div class="first_introduction">
+                <h2 id="javascript_message"></h2> <!-- from <script> -->
+                <h3>Assignment 2</h3>
+                <p>BCIT</p>
+            </div>
+        </div>
+
+        <div class="second" id="aboutMe">
+            <p> OBJECTIVES: Demonstrate using variables, handling different data types, operators and conditional decisions </p>
+            <h3 id="nameOfUser"> (user name) </h3>
+            <p id="userSays"> (user says: ...) </p>
+
+            <div class="boxes">
+                <h3>user data</h3>
+                <ul>
+                    <li id="dataName"> (user name) </li>
+                    <li id="dataAge"> (user age) </li>
+                    <li id="ticketQuantity"> (Ticket quantity) </li>
+                    <li id="cash"> (cash) </li>
+                </ul>
+            </div>
+            <div class="boxes">
+                <h3>concert data</h3>
+                <ul>
+                    <li id="ageRestriction"> (minimum age to attend) </li>
+                    <li id="ticketPrice"> (cost Per Ticket) </li>
+                    <li id="tax"> (tax rate) </li>
+                </ul>
+            </div>
+            <div class="boxes">
+                <h3>processing purchase</h3>
+                <div id="processing"> (process will show...) </div>
+            </div>
+            <div class="boxes">
+                <h3>results</h3>
+                <div id="result">
+                    🎉 There are no error messages to report. Enjoy the show!
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+    <!-- footer -->
+    <footer>
+        <span id="bottom">This</span> page was originally created in September 2023. 
+        <br>
+        Thank you for reading!
+    </footer>
+
 </body>
 </html>
