@@ -82,6 +82,19 @@ h2, h3{
 
 #paintingContainer{
     width: 80%;
+    background-color: rgb(252, 246, 237);
+    padding: 10px;
+    overflow: hidden;   /* to prevent collapse */
+    /* Other ways to create a Block Formatting Context */
+    /*      display: flow-root;     */
+    /*      overflow: auto;     */
+    box-shadow: 1px 1px 10px gray;
+}
+
+#paintingContainer .card{
+    width: 40%;
+    float: left;
+    margin: 0 5%;
 }
 
 .card img{
