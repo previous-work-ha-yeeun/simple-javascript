@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(241, 215, 215);
+    margin: 0;
+}
+
+article{
+    width: 85%;
+    background-color: white;
+    position: relative;
+    left: 15%; /* shift 15% from its original position */
+}
+
+ul.nav{
+    position: fixed; /* fixed & absolute : floating  */   
+    width: 15%;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+}
+
+.nav a:hover{
+    background-color: crimson;
+    color: white;   
+}
+
+article .first{
+    height: 850px;
+    /* background: url(../images/Initial_canada.jpg) fixed; */
+    /* background-size: cover; */
+    background-color: brown;
+    position: relative; /* for the child .first_introduction element */
+}
+
+.first_introduction{
+    font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 25px blue, 0px 0px 10px darkblue, 1px 1px 10px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* to center the element exactly in the middle of its parent */
+}
+
+.first_introduction h3{
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+/* ------------------- Second section of the main article ------------------- */
+
+article .second{
+    padding-left: 20px;
+    padding-bottom: 200px;
+}
+
+article .second h3{
+    font-family: 'Shadows Into Light', cursive ;
+    font-size: xx-large;
+    color: brown;
+}
+
+h2, h3{
+    text-transform: capitalize;
+}
+
+::marker{
+    color: chocolate;
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+}
+
+::selection{    /* When user drags and selects text (::selection) */
+    color: white;
+    background-color: tomato;
+}
+
+.boxes{
+    border: saddlebrown solid;
+    border-radius: 5px;
+}
+
+/* ------------------- Footer ------------------- */
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
