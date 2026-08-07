@@ -53,6 +53,8 @@ article .first{
     margin-top: 50px;
 }
 
+/* ------------------- Second section of the main article ------------------- */
+
 article .second{
     padding-left: 20px;
     padding-bottom: 200px;
@@ -74,13 +76,13 @@ h2, h3{
     font-family: 'Indie Flower', cursive;
 }
 
-/* When user drags and selects text (::selection) */
-::selection{
+::selection{    /* When user drags and selects text (::selection) */
     color: white;
     background-color: darkcyan;
 }
 
 #paintingContainer{
+    display: none;
     width: 80%;
     background-color: rgb(252, 246, 237);
     padding: 10px;
@@ -99,6 +101,22 @@ h2, h3{
 
 .card img{
     width: 100%;
+}
+
+button{
+    border: green thin solid;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+button:hover + #paintingContainer{
+    display: block;
 }
 
 footer{
