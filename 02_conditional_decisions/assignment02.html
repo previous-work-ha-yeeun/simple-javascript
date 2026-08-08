@@ -44,12 +44,24 @@
             <div class="boxes">
                 <h3>user data</h3>
                 <ul>
-                    <li id="dataName"> (user name) </li>
-                    <li id="dataAge"> (user age) </li>
-                    <li id="ticketQuantity"> (Ticket quantity) </li>
-                    <li id="cash"> (cash) </li>
+                    <li> 
+                        <label for="userName">User Name:</label> 
+                        <input type="text" id="userName" value="Jade Ha">
+                    </li>
+                    <li> 
+                        <label for="userAge">User Age:</label> 
+                        <input type="number" id="userAge" value="24">
+                    </li>
+                    <li> 
+                        <label for="ticketQuantity">Ticket Quantity: </label> 
+                        <input type="number" id="ticketQuantity" value="3"></li>
+                    <li> 
+                        <label for="cashOnHand">Cash: </label> 
+                        <input type="number" id="cashOnHand" value="300"></li>
                 </ul>
+                <button>Apply</button>
             </div>
+
             <div class="boxes">
                 <h3>concert data</h3>
                 <ul>
@@ -58,17 +70,19 @@
                     <li id="tax"> (tax rate) </li>
                 </ul>
             </div>
+
             <div class="boxes">
                 <h3>processing purchase</h3>
                 <div id="processing"> (process will show...) </div>
             </div>
+            
             <div class="boxes">
                 <h3>results</h3>
                 <div id="result">
                     🎉 There are no error messages to report. Enjoy the show!
                 </div>
             </div>
-            
+
         </div>
     </article>
 
