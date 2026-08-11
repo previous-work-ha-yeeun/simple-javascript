@@ -8,9 +8,9 @@ const minimumAgeToAttend        = 21;
 const taxRate                   = 0.10;
 
 
-const maxAge    = 130;
+const maxAge            = 130;
 const maxTicketQuantity = 100;
-const maxCash = 10000;
+const maxCash           = 10000;
 
 
 /* Object? When variables belong to one unit , sharing the same lifecycle 
@@ -54,7 +54,7 @@ function saveValue() {
 
 function introduce(name) {
     document.getElementById("nameOfUser").innerHTML = name;
-    document.getElementById("userSays").innerHTML = `${name} says: "It's my first time to go to a concert in Vancouver!"`;
+    document.getElementById("userSays").innerHTML = `${name} says: "It's the greatest show on earth!"`;
 }
 
 function calculateTax() {
@@ -97,10 +97,10 @@ function renderResults() {
     if (!orderState.oldEnough || !orderState.canAfford) {
         document.getElementById("result").innerHTML
         = `${orderState.oldEnough? "" : 
-            `<div class="resultContainer"> Sorry. You are ${orderState.inputAge}, and that's not old enough to attend this show. 
+            `<div class="resultContainer"> ❌Sorry. You are ${orderState.inputAge}, and that's not old enough to attend this show. 
             You would need to be ${minimumAgeToAttend - orderState.inputAge} year(s) older than you actually are.</div>`
         }` + `${orderState.canAfford? "":
-            `<div class="resultContainer"> Sorry, ${orderState.inputName}, you cannot afford this! 
+            `<div class="resultContainer"> ❌Sorry, ${orderState.inputName}, you cannot afford this! 
             You need $${(orderState.afterTax - orderState.inputCash).toFixed(2)} more.</div>`
         }`
     } else{
@@ -109,11 +109,11 @@ function renderResults() {
     }
 }
 
-
 /*  Second Box - static info   */
 document.getElementById("ageRestriction").innerHTML = `Minimum age to attend: ${minimumAgeToAttend}`;
 document.getElementById("ticketPrice").innerHTML = `Cost Per Ticket: $${ticketCostDollarsCDN}`;
 document.getElementById("tax").innerHTML = `Tax Rate: ${100 * taxRate}%`;
+document.getElementById("quantity").innerHTML = `Maximum tickets per purchase: ${maxTicketQuantity}`;
 
 
 
