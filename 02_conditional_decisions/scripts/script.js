@@ -8,8 +8,14 @@ const minimumAgeToAttend        = 21;
 const taxRate                   = 0.10;
 
 
-/* Object? When variables belong to one unit - group them into an object */
-const orderState = {
+const maxAge    = 130;
+const maxTicketQuantity = 100;
+const maxCash = 10000;
+
+
+/* Object? When variables belong to one unit , sharing the same lifecycle 
+            --> group them into an object */
+const orderState = {    // Also gives context about what the variable is for. 
     inputName: "",
     inputAge: 0,
     ticketQuantity: 0,
@@ -32,16 +38,17 @@ function updateValues() {
     saveValue();
     introduce(orderState.inputName);
     calculateTax(); 
-    renderProcess()
+    renderProcess();
+    renderResults();
 }
 
 function saveValue() {
     orderState.inputName = document.getElementById("userName").value;
     orderState.inputAge = Number(document.getElementById("userAge").value);
-    orderState.inputAge = Math.min(orderState.inputAge, 130);     // returns the smallest value
+    orderState.inputAge = Math.min(orderState.inputAge, maxAge);     // returns the smallest value
 
-    orderState.ticketQuantity = Math.min(Number(document.getElementById("ticketQuantity").value), 100);     
-    orderState.inputCash =  Math.min(Number(document.getElementById("cashOnHand").value), 10000);    
+    orderState.ticketQuantity = Math.min(Number(document.getElementById("ticketQuantity").value), maxTicketQuantity);     
+    orderState.inputCash =  Math.min(Number(document.getElementById("cashOnHand").value), maxCash);    
     console.log(orderState);
 }
 
@@ -72,7 +79,7 @@ function processAge() {
     if (orderState.inputAge > minimumAgeToAttend) {
         orderState.oldEnough = true;
         return `<p>User is old enough to attend the show by ${orderState.inputAge - minimumAgeToAttend} year(s).</p>`;
-    } else if (orderState.inputAge == minimumAgeToAttend) {
+    } else if (orderState.inputAge === minimumAgeToAttend) {
         orderState.oldEnough = true;
         return `<p>User is exactly old enough to attend the show!</p>`;
     } else {
@@ -84,6 +91,22 @@ function processAge() {
 function processAffordability() {
     orderState.canAfford = orderState.inputCash >= orderState.afterTax;
     return orderState.canAfford ? `<p>User can afford this.</p>` : "" ;
+}
+
+function renderResults() {
+    if (!orderState.oldEnough || !orderState.canAfford) {
+        document.getElementById("result").innerHTML
+        = `${orderState.oldEnough? "" : 
+            `<div class="resultContainer"> Sorry. You are ${orderState.inputAge}, and that's not old enough to attend this show. 
+            You would need to be ${minimumAgeToAttend - orderState.inputAge} year(s) older than you actually are.</div>`
+        }` + `${orderState.canAfford? "":
+            `<div class="resultContainer"> Sorry, ${orderState.inputName}, you cannot afford this! 
+            You need $${(orderState.afterTax - orderState.inputCash).toFixed(2)} more.</div>`
+        }`
+    } else{
+        document.getElementById("result").textContent
+        = `🎉 There are no error messages to report. Enjoy the show!`
+    }
 }
 
 
