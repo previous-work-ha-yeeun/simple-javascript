@@ -44,3 +44,26 @@ REQUIREMENTS
       - Display both the above messages if user is both too young and cannot afford it
       - If the user is old enough and can also afford the purchase, display a message confirming the purchase.
 ```
+
+
+
+### 03_arrays
+```
+REQUIREMENTS
+  Write an HTML page styled with CSS that includes a Javascript with the following characteristics:
+  PART ONE
+    - Use array.push() to add at least three more first names to the 'students' array. One of those three names should be your first name.
+    - Display the total number of students in the array.
+    - Iterate over the students array and display each student name as a LI tag in an UL
+    - If a student name matches the targetName include a ‘target found’ message along with the student name in the LI tag.
+    - After displaying the students array, provide a message that summarizes whether the target name was or was not found in the array. 
+    - The test for determining if the targetName is found must be case insensitive. Investigate the string.toLowerCase() function.
+  PART TWO
+    Display the contents of the arrayOfNumbers array in a ul with each number shown in a separate li. After displaying the array data, display information about the contents of the array:
+    - The sum of all numbers in the array
+    - How many even numbers are in the array
+    - How many odd numbers are in the array
+    - The number 0 (zero) is neither even or odd, so doesn’t count
+  PART THREE
+    Use iterative code to display each of the numbers in the arrayOfNumbers array, and also for each number perform a count down or count up from that number to zero. For example, if the number is 4, display 4 3 2 1 0. If the number is -3 display -3 -2 -1 0.
+```
