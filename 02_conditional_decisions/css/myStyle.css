@@ -32,9 +32,8 @@ ul.nav{
 
 article .first{
     height: 850px;
-    /* background: url(../images/Initial_canada.jpg) fixed; */
-    /* background-size: cover; */
-    background-color: brown;
+    background: url(../images/concert.jpg) fixed center;
+    background-size: cover;
     position: relative; /* for the child .first_introduction element */
 }
 
@@ -84,7 +83,7 @@ h2, h3{
 
 .boxes{
     width: 40%;
-    height: 350px;
+    height: 400px;
     margin: 2%;
     border: saddlebrown solid;
     border-radius: 5px;
@@ -101,6 +100,11 @@ h2, h3{
     /* flex:  0 0 130px; */
     display: inline-block;
     width: 130px;
+}
+
+.boxes input{
+    display: inline-block;
+    width: 80%;
 }
 
 .boxes button{
@@ -122,4 +126,23 @@ h2, h3{
 footer{
     text-align: center;
     padding: 10px;
+}
+
+/* ------------------- Responsive design: width 650px or less ------------------- */
+
+@media screen and (max-width: 650px){
+    ul.nav{
+        width: 100%;
+        margin: 0;
+        background-color: rgb(241, 215, 215);
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    article{
+        width: 100%;
+        left: 0;
+        z-index: 0;
+    }
 }
