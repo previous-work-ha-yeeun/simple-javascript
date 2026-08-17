@@ -37,7 +37,7 @@ article header{
     font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
     text-align: center;
     color: #E8DEE2;
-    margin: 50px 0 0;
+    margin: 40px 0 0;
     padding: 20px 0;
 }
 
@@ -64,7 +64,7 @@ main h3{
 }
 
 ::marker{
-    color: chocolate;
+    color: brown;
     font-size: x-large;
     font-family: 'Indie Flower', cursive;
 }
@@ -75,18 +75,14 @@ main h3{
 }
 
 .resultContainer {
-    border: green solid;
+    border: brown solid;
     border-radius: 5px;
-    background-color: rgb(224, 239, 224);
-    padding: 5px;
-}
-.inList {
+    background-color: #82757B;
     padding: 0 0 5px 5px;
 }
 .resultContainer::before {
     content: "👍";
 }
-
 
 /* ------------------- Footer ------------------- */
 
