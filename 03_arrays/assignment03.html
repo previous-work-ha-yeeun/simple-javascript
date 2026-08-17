@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YeEun Ha</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fonts: Indie Flower, Rubik, Shadows Into Light -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <!-- Javascript -->
+    <script src="./scripts/script.js" defer></script>
 </head>
+
 <body>
+    <!-- Left section -->
+    <section>
+        <ul class="nav">
+            <li><a href="#top">Top ▲</a></li>
+            <li><a href="#aboutMe">Part One</a></li>
+            <li><a href="#partTwo">Part Two</a></li>
+            <li><a href="#partThree">Part Three</a></li>
+            <li><a href="#bottom">Bottom ▼</a></li>
+        </ul>
+    </section>
     
+    <!-- Main article -->
+    <article id="top">
+        <header>
+            <h2 id="javascript_message"></h2> <!-- from <script> -->
+            <h3>Assignment 3</h3>
+            <p>BCIT</p>
+        </header>
+
+        <main>
+            <p> OBJECTIVES: Demonstrate working with arrays and iterative loops.</p>
+            <br>
+            
+            <h2 id="aboutMe">Part One: Display and Search Array</h2>
+            <span>Target name is :</span>
+            <label>
+                <input type="radio" name="target" id="" value="YEeun" checked> YEeun
+            </label>
+            <label>
+                <input type="radio" name="target" id="" value="erIC"> erIC
+            </label>
+            <label>
+                <input type="radio" name="target" id="" value="kimBERly"> kimBERly
+            </label>
+            <label>
+                <input type="radio" name="target" id="" value="stranger"> stranger
+            </label>
+            <h3> List of Students: </h3>
+            <p id="studentsNumber">There are...</p>
+            <p>Performing a <strong>case insensitive</strong> comparison for target name...</p>
+            <ol id="names"></ol>
+            <h3>Final Report on Target Name...</h3>
+            <p id="result">👎 NO, target name was NOT found in the list </p>
+
+            <hr>
+            <hr>
+            <h2 id="partTwo">Part Two: Tally Even/Odd and Sum</h2>
+            <p>Iterative code used to perform various counting routines. </p>
+            <p>This is the array of numbers we will work with:</p>
+            <div id="numbers"></div>
+
+            <p id="even">There are...</p>
+            <p id="odd">There are...</p>
+            <p id="sum">The sum ...</p>
+
+            <hr>
+            <hr>
+            <h2 id="partThree">Part Three: Count Up or Down</h2>
+            <p>More iterative code used to perform various counting routines, using the same array of numbers from Part Two.</p>
+            <p>Counting from each number to zero...</p>
+            <div id="counting"></div>
+        </main>
+    </article>
+
+    <!-- footer -->
+    <footer>
+        <span id="bottom">This</span> page was originally created in October 2023.
+        <br>
+        Thank you for reading!
+    </footer>
 </body>
 </html>
