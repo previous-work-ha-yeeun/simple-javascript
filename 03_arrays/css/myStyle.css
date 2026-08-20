@@ -1,6 +1,5 @@
 body{
     background-color: rgb(165, 142, 146);
-    /* background-color: #90838A; */
     margin: 0;
 }
 
@@ -29,17 +28,16 @@ ul.nav{
 article{
     width: 85%;
     background-color: #90838A;
-    /* background-color: rgb(165, 142, 146); */
     position: relative;
     left: 15%; /* shift 15% from its original position */
     color: blanchedalmond;
+    margin: 30px 0 0;   /* margin-top: 30px; */
 }
 
 article header{
     font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
     text-align: center;
     color: #E8DEE2;
-    margin: 30px 0 0;
     padding: 20px 0;
 }
 
@@ -73,7 +71,7 @@ main h3{
 
 ::selection{    /* When user drags and selects text (::selection) */
     color: white;
-    background-color: #90838A;
+    background-color: rgb(165, 142, 146);
 }
 
 label{
@@ -98,12 +96,12 @@ footer{
 }
 
 /* ------------------- Responsive design: width 650px or less ------------------- */
-/* 
+
 @media screen and (max-width: 650px){
     ul.nav{
         width: 100%;
         margin: 0;
-        background-color: rgb(241, 215, 215);
+        background-color: rgb(165, 142, 146);
         display: flex;
         justify-content: center;
         z-index: 1;
@@ -112,6 +110,7 @@ footer{
     article{
         width: 100%;
         left: 0;
+        margin: 0;
         z-index: 0;
     }
-} */
+}

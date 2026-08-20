@@ -81,7 +81,7 @@ function renderFoundResult() {
 */
 for (let i = 0; i < NUMBER_SELECTS; i++) {
     const selectElement = document.createElement('select');
-    selectElement.className = 'numberMenu' // OR  select.classList.add('number-select', 'numberMenu');
+    selectElement.className = 'numberMenu' // OR  .classList.add('number-select', 'numberMenu');
 
     for (let num = NUMBER_MIN; num <= NUMBER_MAX; num++) {
         const optionElement = document.createElement('option');
@@ -107,7 +107,7 @@ function updateResult() {
     const arrayOfSelectedValues 
         = [...$selectElements].map(eachElement => Number(eachElement.value)); /* select.value: the currently selected option's value, select.options: all of the options inside the <select> */ 
     
-    /* update the array*/ 
+    /* update the array */ 
     arrayOfNumbers.splice(0, arrayOfNumbers.length, ...arrayOfSelectedValues);
 
     renderResult(arrayOfNumbers);
