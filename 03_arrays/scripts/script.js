@@ -8,6 +8,7 @@ const $numbers = document.getElementById('numbers')
 const $even = document.getElementById('even')
 const $odd = document.getElementById('odd')
 const $sum = document.getElementById('sum')
+const $counting = document.getElementById('counting');
 
 const students = ["Jane", "Joe", "Jack"];
 let targetName = "";
@@ -116,6 +117,7 @@ function updateResult() {
 function renderResult(newArray) {
     createNumbersList(newArray)
     tallyEvenOdd(newArray)
+    count(newArray)
 }
 
 function createNumbersList(array) {
@@ -145,6 +147,33 @@ function tallyEvenOdd(array) {
     $even.textContent = `There are ${even} even number(s) in the array`
     $odd.textContent = `There are ${odd} odd number(s) in the array`
     $sum.textContent = `The sum of all array numbers is: ${sum}`
+}
+
+function count(array) {
+    let html='';
+
+    array.forEach(el => {
+        html += `<hr> <h3>Number: ${el}</h3>`;
+        if (el === 0) {
+            html += `<p>There is no counting to be done.</p>`;
+        } else if (el > 0) {
+            html += `<p>Count down:</p> <ul>`;
+            while (el >= 0) {
+                html += `<li>${el}</li>`; 
+                --el;
+            }
+            html += `</ul>`;
+        } else {
+            html += `<p>Count up:</p> <ul>`;
+            while (el <= 0) {
+                html += `<li>${el}</li>`; 
+                ++el;
+            }
+            html += `</ul>`;
+        }
+    });
+
+    $counting.innerHTML = html;
 }
 
 

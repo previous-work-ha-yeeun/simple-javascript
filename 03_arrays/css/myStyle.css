@@ -29,8 +29,9 @@ article{
     width: 85%;
     background-color: #90838A;
     position: relative;
-    left: 15%; /* shift 15% from its original position */
-    color: blanchedalmond;
+    left: 15%;  /* shift 15% from its original position */
+    /* color: blanchedalmond; */
+    color: beige;
     margin: 30px 0 0;   /* margin-top: 30px; */
 }
 
