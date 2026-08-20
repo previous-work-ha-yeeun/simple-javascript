@@ -4,10 +4,10 @@ const $studentOptions = document.querySelector('#targetOptions');
 const $studentResult = document.getElementById("result");
 
 const $numberOptions = document.getElementById('numberOptions');
-const $numbers = document.getElementById('numbers')
-const $even = document.getElementById('even')
-const $odd = document.getElementById('odd')
-const $sum = document.getElementById('sum')
+const $numbers = document.getElementById('numbers');
+const $even = document.getElementById('even');
+const $odd = document.getElementById('odd');
+const $sum = document.getElementById('sum');
 const $counting = document.getElementById('counting');
 
 const students = ["Jane", "Joe", "Jack"];
@@ -49,9 +49,9 @@ function makeStudentsList() {
     students.forEach(e => {
         if (e.toLowerCase() === targetName.toLowerCase()) {
             wasFound = true;
-            html += `<li class="resultContainer">${e} <-- target name found!</li>`
+            html += `<li class="resultContainer">${e} <-- target name found!</li>`;
         } else {
-            html += `<li>${e}</li>`
+            html += `<li>${e}</li>`;
         }
     })
     return html;
@@ -82,7 +82,7 @@ function renderFoundResult() {
 */
 for (let i = 0; i < NUMBER_SELECTS; i++) {
     const selectElement = document.createElement('select');
-    selectElement.className = 'numberMenu' // OR  .classList.add('number-select', 'numberMenu');
+    selectElement.className = 'numberMenu'; // OR  .classList.add('number-select', 'numberMenu');
 
     for (let num = NUMBER_MIN; num <= NUMBER_MAX; num++) {
         const optionElement = document.createElement('option');
@@ -115,9 +115,9 @@ function updateResult() {
 }
 
 function renderResult(newArray) {
-    createNumbersList(newArray)
-    tallyEvenOdd(newArray)
-    count(newArray)
+    createNumbersList(newArray);
+    tallyEvenOdd(newArray);
+    count(newArray);
 }
 
 function createNumbersList(array) {
@@ -134,19 +134,19 @@ function tallyEvenOdd(array) {
     let sum = 0, even = 0, odd = 0;
 
     array.forEach(el => {
-        if (el === 0) return 
+        if (el === 0) return; 
 
         if (el % 2 == 0) {
             ++even;
         } else {
             ++odd;
         }
-        sum += el       
+        sum += el;       
     });
 
-    $even.textContent = `There are ${even} even number(s) in the array`
-    $odd.textContent = `There are ${odd} odd number(s) in the array`
-    $sum.textContent = `The sum of all array numbers is: ${sum}`
+    $even.textContent = `There are ${even} even number(s) in the array`;
+    $odd.textContent = `There are ${odd} odd number(s) in the array`;
+    $sum.textContent = `The sum of all array numbers is: ${sum}`;
 }
 
 function count(array) {
