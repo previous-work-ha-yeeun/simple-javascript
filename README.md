@@ -1,5 +1,5 @@
-# javascript
-simple and basic javascript work
+# Javascript
+Simple and basic javascript work
 
 
 
@@ -66,4 +66,41 @@ REQUIREMENTS
     - The number 0 (zero) is neither even or odd, so doesn’t count
   PART THREE
     Use iterative code to display each of the numbers in the arrayOfNumbers array, and also for each number perform a count down or count up from that number to zero. For example, if the number is 4, display 4 3 2 1 0. If the number is -3 display -3 -2 -1 0.
+```
+
+
+
+### 04_functions
+```
+REQUIREMENTS
+  This assignment requires three JavaScript files to be applied to the HTML:
+  PAGE ONE
+    assignment04-data.js: This file is provided with this assignment. Load this script, unmodified, into your Javascript application. 
+  PAGE TWO
+    assignment04-functions.js: This script should contain the definitions for three functions you will write. No other Javascript instructions should be in this file: only instructions within the three function definitions:
+    1. Function for listing images
+      Write a function that will display an HTML list of images if provided an array of image file names. Include the following characteristics:
+      - Requires an array as parameter.
+      - If the parameter is not an array, return a descriptive string error message and do not proceed to make a list.
+      - If the parameter is an array, loop through all items, preparing an HTML unordered list with one <img> inside each list item. This HTML list should be the function’s return.
+      - When looping through the array items, if any item is not a string, skip that item and continue to display any remaining items as images. Send a descriptive error message to the Console when any such non-strings are encountered.
+    2. Function for listing hyperlinks
+      Write a function that will display an HTML list of links if provided an array of string URLs. It requires the following characteristics:
+      - Requires an array as parameter
+      - If the parameter is not an array, return a descriptive error message and do not proceed to make a list.
+      - If the parameter is an array loop through all items and prepare an HTML unordered list with one <a> tag for each <li>. Once prepared, the function should return this list HTML
+      - When looping through the array items if any item is not a string, skip that item and continue to display any remaining items as hyperlinks. Send a descriptive error message to the Console if/when this happens
+    3. Function for listing names
+      Write a function that will display an HTML list of names if provided an array of string names. It requires the following characteristics:
+      - Requires an array as the first parameter.
+      - Allows an optional second parameter that will have the default value of the string ‘ul’
+      - The first parameter must be of type array. If a second parameter is supplied it must be either the string value ‘ol’ or ‘ul’
+      - Any invalid arguments provided should result in the return of a descriptive error message and the function should perform no further processing.
+      - If parameter values are acceptable, the function should iterate over the array and display each item as the text contents of a <li> inside an HTML list.
+      - If a second parameter is supplied, use it to display the appropriate HTML list type to the browser (eg: display the array as either a <ul> or <ol>). 
+      - The function should return the HTML list it has prepared.
+  PAGE THREE
+    assignment04.js: All updates to the DOM should be performed by this script, and not by either of the other two .js files in this assignment.
+    This script should be the ‘driver’ of the application: it should perform the invocations of each the functions defined in assignment04-functions.js using argument data provided in assignment04-data.js. 
+    Use the JavaScript Date Object to detect what time of day it is. If it is the morning time, display an image of the sun along with a ‘Good morning’ message. Anytime before 12 noon should be considered morning.
 ```
