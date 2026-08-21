@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YeEun Ha</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fonts: Indie Flower, Rubik, Shadows Into Light -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik:wght@300&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <!-- Javascript -->
+    <script src="./scripts/assignment04-data.js" defer></script>
+    <script src="./scripts/assignment04-functions.js" defer></script>
+    <script src="./scripts/assignment04.js" defer></script>
 </head>
+
 <body>
+    <!-- Left section -->
+    <section>
+        <ul class="nav">
+            <li><a href="#top">Top ▲</a></li>
+            <li><a href="#aboutMe">Part One</a></li>
+            <li><a href="#partTwo">Part Two</a></li>
+            <li><a href="#partThree">Part Three</a></li>
+            <li><a href="#bottom">Bottom ▼</a></li>
+        </ul>
+    </section>
+    
+    <!-- Main article -->
+    <article id="top">
+        <header>
+            <h2 id="javascript_message"></h2> <!-- from <script> -->
+            <h3>Assignment 4</h3>
+            <p>BCIT</p>
+        </header>
+
+        <main>
+            <p> OBJECTIVES: Write and run Javascript functions with argument passing, parameter validation, and returns. </p>
+            <br>
+
+            <div id="timing">Hello, the current time is ... </div>
+           
+            <h2 id="aboutMe">Part One: List of Images</h2>
+            <p>A function that creates an HTML list of images based on an array of image paths</p>
+            
+            <h3>Invoke Not Using Required Array Argument </h3>
+            <p>Invoking with a string, not an array</p>
+            <div id="justString">Not good result...</div>
+            <div id="justNumber">Not good result...</div>
+
+            <h3>Invoke with Arrays Containing Wrong Data Type</h3>
+            <p>Invoking with an array of numbers, not string image names 
+                <br>(See Console for function error message).</p>
+            <div id="numbers"></div>
+
+            <p>Invoking with an array of booleans, not string image names 
+                <br>(See Console for function error message).</p>
+            <div id="booleans"></div>
+            
+            <p>Invoking with a valid array of image names. </p>
+            <div id="onlyImages">good result</div>
+
+            <p>Invoking with an array of some image names and some junk
+                <br>(See Console for function error messages). </p>
+            <div id="someJunks">good result</div>
+            
+            <hr>
+            <h2 id="partTwo">Part Two: List of Links</h2>
+            <p>A function that creates an HTML list of links based on an array of web URLs</p>
+            <p>Trying with an array that contains booleans, and not string urls..</p>
+            <div id="onlybooleans"></div>
+
+            <p>Trying with a number, not an array.. </p>
+            <div id="notArray"></div>
+
+            <p>Trying with a valid array of link URLs..</p>
+            <div id="onlyLinks"></div>
+
+            <p>Trying with an array of link URLs and also junk..</p>
+            <div id="alsoJunks"></div>
+
+            <hr>
+            <h2 id="partThree">Part Three: List of Names</h2>
+            <p>A function that creates  an HTML list of names based on an array of image paths</p>
+            <p>Providing invalid parameter(not an array)</p>
+            <div id="notAnArray"></div>
+
+            <p>Providing invalid parameter(array is too small)</p>
+            <div id="tooSmall"></div>
+
+            <p>Providing invalid socond parameter (can only make 'ul' or 'ol' lists)</p>
+            <div id="invalidParameter"></div>
+
+            <p>Providing valid parameter array, using default second parameter for list type 'ul'</p>
+            <div id="defaultParameter"></div>
+
+            <p>Providing valid parameter array with second parameter of 'cheeseburger' instead of 'ul' or 'ol'</p>
+            <div id="cheeseParameter"></div>
+
+            <p>Providing valid parameter array with second parameter of 'ol' instead of 'ul'</p>
+            <div id="olParameter"></div>
+
+        </main>
+    </article>
+
+    <!-- footer -->
+    <footer>
+        <span id="bottom">This</span> page was originally created in October 2023.
+        <br>
+        Thank you for reading!
+    </footer>
     
 </body>
 </html>

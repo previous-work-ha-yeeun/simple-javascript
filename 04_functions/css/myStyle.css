@@ -1,0 +1,103 @@
+body{
+    background-color: #90838A;
+    margin: 0;
+}
+
+ul.nav{
+    position: fixed; /* fixed & absolute : floating  */   
+    width: 15%;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: blanchedalmond;
+    /* color: black; */
+    padding: 10px 30px;
+}
+
+.nav a:hover{
+    background-color: gray;
+    color: white;   
+}
+
+/* ------------------- Main article ------------------- */
+
+article{
+    width: 85%;
+    background-color: rgb(165, 142, 146);
+    position: relative;
+    left: 15%;  /* shift 15% from its original position */
+    color: black;
+    margin: 30px 0 0;   /* margin-top: 30px; */
+}
+
+article header{
+    font-family: 'Rubik', sans-serif /* a backup font in case the Google font fails to load */ ;
+    text-align: center;
+    color: #E8DEE2;
+    padding: 20px 0;
+}
+
+header h3{
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+article main{
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+
+main h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: xx-large;
+    color: brown;  
+}
+
+main h3{
+    font-family: 'Shadows Into Light', cursive ;
+    font-size: x-large;
+    color: brown;
+}
+
+::marker{
+    color: brown;
+    font-size: x-large;
+    font-family: 'Indie Flower', cursive;
+}
+
+::selection{    /* When user drags and selects text (::selection) */
+    color: white;
+    background-color: #90838A;
+}
+
+/* ------------------- Footer ------------------- */
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+/* ------------------- Responsive design: width 650px or less ------------------- */
+
+@media screen and (max-width: 650px){
+    ul.nav{
+        width: 100%;
+        margin: 0;
+        background-color: rgb(165, 142, 146);
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    article{
+        width: 100%;
+        left: 0;
+        margin: 0;
+        z-index: 0;
+    }
+}
