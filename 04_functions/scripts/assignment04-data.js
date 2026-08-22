@@ -15,11 +15,8 @@ for the list images function tests
 //use this when pathing the src="" to the images folder
 const pathToImages  = "images/";
 
-//a valid array of images
-const arrayOfImages          = ["jane.jpg","joe.jpg","jana.jpg","jim.jpg"];
-//an array with some valid images
-//and some junk
-const arrayOfSomeImages      = ["kittens-01.jpg","kittens-02.jpg",true,"kittens-03.jpg",23,"kittens-04.jpg","kittens-05.jpg"];
+//an array with some valid images and some junk
+const arrayOfSomeImages      = ["jane.jpg", 23,"joe.jpg","jana.jpg", true,"jim.jpg"];
 
 //not a arrays of images
 const notAnArrayOfImages     = "just a string";

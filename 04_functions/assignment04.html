@@ -52,24 +52,19 @@
             
             <h3>Invoke Not Using Required Array Argument </h3>
             <p>Invoking with a string, not an array</p>
-            <div id="justString">Not good result...</div>
-            <div id="justNumber">Not good result...</div>
+            <select name="" id="nonArrayOptions">
+                <option value="" id="nonArrayOption1"></option>
+                <option value="" id="nonArrayOption2"></option>
+            </select>
+            <div id="nonArrayResult">Not good result...</div>
 
             <h3>Invoke with Arrays Containing Wrong Data Type</h3>
-            <p>Invoking with an array of numbers, not string image names 
-                <br>(See Console for function error message).</p>
-            <div id="numbers"></div>
+            <p id="forNumbers">Invoking with an array of numbers...</p>
+            <p id="forBooleans">Invoking with an array of booleans...</p>
 
-            <p>Invoking with an array of booleans, not string image names 
-                <br>(See Console for function error message).</p>
-            <div id="booleans"></div>
-            
-            <p>Invoking with a valid array of image names. </p>
-            <div id="onlyImages">good result</div>
-
-            <p>Invoking with an array of some image names and some junk
-                <br>(See Console for function error messages). </p>
-            <div id="someJunks">good result</div>
+            <p id="imagesAndJunks">Invoking with an array of some valid image names and some junk <span class="nonImages">(23, true)</span> 
+                <br>(See Console for function error messages).</p>
+            <div id="imagesResult">good result</div>
             
             <hr>
             <h2 id="partTwo">Part Two: List of Links</h2>
@@ -112,7 +107,7 @@
 
     <!-- footer -->
     <footer>
-        <span id="bottom">This</span> page was originally created in October 2023.
+        <span id="bottom">This</span> page was originally created in October 2023. ❖Image source: Pixabay
         <br>
         Thank you for reading!
     </footer>

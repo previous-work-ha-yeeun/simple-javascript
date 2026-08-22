@@ -79,6 +79,15 @@ main h3{
     float: right;
 }
 
+.nonImages{
+    color: blanchedalmond;
+}
+
+.listOfImages{
+    width: 70px;
+    border: pink solid;
+}
+
 /* ------------------- Footer ------------------- */
 
 footer{
