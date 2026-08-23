@@ -89,7 +89,7 @@ REQUIREMENTS
       - Requires an array as the first parameter.
       - Allows an optional second parameter that will have the default value of the string ‘ul’
       - The first parameter must be of type array. If a second parameter is supplied it must be either the string value ‘ol’ or ‘ul’ 
-      - If the parameter is not an array, return a descriptive error message and do not proceed to make a list.
+      - If the first parameter is not an array, return a descriptive error message and do not proceed to make a list.
       - When looping through the array items if any item is not a string, skip that item and continue to display any remaining items as hyperlinks. Send a descriptive error message to the Console if/when this happens
       - The function should return the HTML list it has prepared.
   PAGE THREE
