@@ -36,7 +36,7 @@ function listURLs(array, listType = 'ul') {
         html = `<${listType}>`;
         array.forEach(element => {
             if (isURL(element)) {
-                html += `<li>${element}</li>`;
+                html += `<li><a href=${element} target="_blank" rel="noopener noreferrer">${element}</a></li>`;
             } else {
                 console.log(`Hey, '${element}' is not a URL`)
             }
