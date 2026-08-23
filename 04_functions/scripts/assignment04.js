@@ -1,11 +1,18 @@
 /* This page invokes functions defined externally */
 
 const $time = document.getElementById('time');
-const $nonArrayOptions = document.getElementById('nonArrayOptions') 
+const $nonArrayOptions = document.getElementById('nonArrayOptions'); 
 const $nonArrayOption1 = document.getElementById('nonArrayOption1');
 const $nonArrayOption2 = document.getElementById('nonArrayOption2');
 const $nonArrayResult = document.getElementById('nonArrayResult');
 const $imagesResult = document.getElementById('imagesResult');
+
+const $wrongParameterResult = document.getElementById('wrongParameterResult'); 
+const $urlOptions = document.getElementById('urlOptions'); 
+const $urlOption1 = document.getElementById('urlOption1'); 
+const $urlOption2 = document.getElementById('urlOption2'); 
+const $urlOption3 = document.getElementById('urlOption3'); 
+const $urlResult = document.getElementById('urlResult'); 
 
 const currentHour = new Date().getHours();
 const MORNING_CUTOFF_HOUR = 12;
@@ -30,17 +37,16 @@ $nonArrayOption2.textContent = alsoNotAnArrayOfImages;
 $nonArrayResult.innerHTML = listImages($nonArrayOptions.value);
 
 document.getElementById('forNumbers').innerHTML = `Invoking with an array of numbers 
-    <span class="nonImages">[${anArrayOfNumbers}]</span>, not string image names 
+    <span class="parameters">[${anArrayOfNumbers}]</span>, not string image names 
     <br>(See Console for function error messages).`;
 listImages(anArrayOfNumbers);
 
 document.getElementById('forBooleans').innerHTML = `Invoking with an array of booleans 
-    <span class="nonImages">[${anArrayOfBooleans}]</span>, not string image names 
+    <span class="parameters">[${anArrayOfBooleans}]</span>, not string image names 
     <br>(See Console for function error messages).`;
 listImages(anArrayOfBooleans);
 
 $imagesResult.innerHTML = listImages(arrayOfSomeImages);
-
 
 /* --- on change --- */
 $nonArrayOptions.addEventListener('change', (event) => {
@@ -49,5 +55,21 @@ $nonArrayOptions.addEventListener('change', (event) => {
 })
 
 
+console.log("-----------Part Two----------")
+/* --- initial page load --- */
+listURLs(anArrayOfBooleans);
+$wrongParameterResult.innerHTML = listURLs(arrayOfLinks, "Hayes");
 
+$urlOption1.value = arrayOfLinks;
+$urlOption1.textContent = `[${arrayOfLinks}]`;
+$urlOption2.value = arrayOfLinksTooSmall;
+$urlOption2.textContent = `[${arrayOfLinksTooSmall}]`;
+$urlOption3.value = anotherArrayOfLinks;
+$urlOption3.textContent = `[${anotherArrayOfLinks}]`;
+$urlResult.innerHTML = listURLs(arrayOfLinks, "ol");
 
+/* --- on change --- */
+$urlOptions.addEventListener('change', (event) => {
+    /* get a new value*/
+    $urlResult.innerHTML = listURLs(event.target.value.split(",")); // split() returns an Array
+})

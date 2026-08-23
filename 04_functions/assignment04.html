@@ -28,7 +28,6 @@
             <li><a href="#top">Top ▲</a></li>
             <li><a href="#aboutMe">Part One</a></li>
             <li><a href="#partTwo">Part Two</a></li>
-            <li><a href="#partThree">Part Three</a></li>
             <li><a href="#bottom">Bottom ▼</a></li>
         </ul>
     </section>
@@ -51,7 +50,7 @@
             <p>A function that creates an HTML list of images based on an array of image paths</p>
             
             <h3>Invoke Not Using Required Array Argument </h3>
-            <p>Invoking with a string, not an array</p>
+            <p>Invoking with a string/number, not an array...</p>
             <select name="" id="nonArrayOptions">
                 <option value="" id="nonArrayOption1"></option>
                 <option value="" id="nonArrayOption2"></option>
@@ -62,46 +61,29 @@
             <p id="forNumbers">Invoking with an array of numbers...</p>
             <p id="forBooleans">Invoking with an array of booleans...</p>
 
-            <p id="imagesAndJunks">Invoking with an array of some valid image names and some junk <span class="nonImages">(23, true)</span> 
+            <p id="imagesAndJunks">Invoking with an array of some valid image names and some junk - <span class="parameters">23, true</span> 
                 <br>(See Console for function error messages).</p>
             <div id="imagesResult">good result</div>
             
             <hr>
+
             <h2 id="partTwo">Part Two: List of Links</h2>
             <p>A function that creates an HTML list of links based on an array of web URLs</p>
-            <p>Trying with an array that contains booleans, and not string urls..</p>
-            <div id="onlybooleans"></div>
 
-            <p>Trying with a number, not an array.. </p>
-            <div id="notArray"></div>
+            <h3>Invoke with Arrays of Various Data Types</h3>
+            <p>Trying with an array that contains booleans <span class="parameters">[true, false, true]</span>, and not string urls..
+                <br>(See Console for function error messages)</p>
 
-            <p>Trying with a valid array of link URLs..</p>
-            <div id="onlyLinks"></div>
+            <p>Providing an invalid second parameter <span class="parameters">"Hayes"</span> (can only make 'ul' or 'ol' lists)..</p>
+            <div id="wrongParameterResult"></div>
 
-            <p>Trying with an array of link URLs and also junk..</p>
-            <div id="alsoJunks"></div>
-
-            <hr>
-            <h2 id="partThree">Part Three: List of Names</h2>
-            <p>A function that creates  an HTML list of names based on an array of image paths</p>
-            <p>Providing invalid parameter(not an array)</p>
-            <div id="notAnArray"></div>
-
-            <p>Providing invalid parameter(array is too small)</p>
-            <div id="tooSmall"></div>
-
-            <p>Providing invalid socond parameter (can only make 'ul' or 'ol' lists)</p>
-            <div id="invalidParameter"></div>
-
-            <p>Providing valid parameter array, using default second parameter for list type 'ul'</p>
-            <div id="defaultParameter"></div>
-
-            <p>Providing valid parameter array with second parameter of 'cheeseburger' instead of 'ul' or 'ol'</p>
-            <div id="cheeseParameter"></div>
-
-            <p>Providing valid parameter array with second parameter of 'ol' instead of 'ul'</p>
-            <div id="olParameter"></div>
-
+            <p>Providing the following as the first parameter...</p>
+            <select name="" id="urlOptions">
+                <option value="" id="urlOption1"></option>
+                <option value="" id="urlOption2"></option>
+                <option value="" id="urlOption3"></option>
+            </select>
+            <div id="urlResult"></div>
         </main>
     </article>
 
