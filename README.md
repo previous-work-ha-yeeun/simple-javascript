@@ -77,7 +77,7 @@ REQUIREMENTS
   PAGE ONE
     assignment04-data.js: This file is provided with this assignment. Load this script, unmodified, into your Javascript application. 
   PAGE TWO
-    assignment04-functions.js: This script should contain the definitions for three functions you will write. No other Javascript instructions should be in this file: only instructions within the three function definitions:
+    assignment04-functions.js: This script should contain the definitions for two functions you will write. No other Javascript instructions should be in this file: only instructions within the three function definitions:
     1. Function for listing images
       Write a function that will display an HTML list of images if provided an array of image file names. Include the following characteristics:
       - Requires an array as parameter.
@@ -86,18 +86,11 @@ REQUIREMENTS
       - When looping through the array items, if any item is not a string, skip that item and continue to display any remaining items as images. Send a descriptive error message to the Console when any such non-strings are encountered.
     2. Function for listing hyperlinks
       Write a function that will display an HTML list of links if provided an array of string URLs. It requires the following characteristics:
-      - Requires an array as parameter
-      - If the parameter is not an array, return a descriptive error message and do not proceed to make a list.
-      - If the parameter is an array loop through all items and prepare an HTML unordered list with one <a> tag for each <li>. Once prepared, the function should return this list HTML
-      - When looping through the array items if any item is not a string, skip that item and continue to display any remaining items as hyperlinks. Send a descriptive error message to the Console if/when this happens
-    3. Function for listing names
-      Write a function that will display an HTML list of names if provided an array of string names. It requires the following characteristics:
       - Requires an array as the first parameter.
       - Allows an optional second parameter that will have the default value of the string ‘ul’
-      - The first parameter must be of type array. If a second parameter is supplied it must be either the string value ‘ol’ or ‘ul’
-      - Any invalid arguments provided should result in the return of a descriptive error message and the function should perform no further processing.
-      - If parameter values are acceptable, the function should iterate over the array and display each item as the text contents of a <li> inside an HTML list.
-      - If a second parameter is supplied, use it to display the appropriate HTML list type to the browser (eg: display the array as either a <ul> or <ol>). 
+      - The first parameter must be of type array. If a second parameter is supplied it must be either the string value ‘ol’ or ‘ul’ 
+      - If the parameter is not an array, return a descriptive error message and do not proceed to make a list.
+      - When looping through the array items if any item is not a string, skip that item and continue to display any remaining items as hyperlinks. Send a descriptive error message to the Console if/when this happens
       - The function should return the HTML list it has prepared.
   PAGE THREE
     assignment04.js: All updates to the DOM should be performed by this script, and not by either of the other two .js files in this assignment.
